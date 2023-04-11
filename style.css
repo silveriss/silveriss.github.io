@@ -1,0 +1,184 @@
+
+    body {
+      margin: 0;
+      font-family: 'Comfortaa', sans-serif;
+      color: antiquewhite;
+      background: rgb(26, 37, 37);
+      overflow-x: hidden;
+    }
+    
+    section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 400px;
+      padding: 100px 20vw;
+    }
+
+    .blue{
+      background: rgb(111, 111, 204);
+    }
+
+    .red {
+      background: rgb(230, 113, 113);
+    }
+
+    .green {
+      background: rgb(93, 139, 93);
+    }
+
+    .wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 295px;
+}
+
+.wave1 .shape-fill {
+    fill: rgb(26, 37, 37);
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 184px;
+}
+
+.wave2 .shape-fill {
+    fill: rgb(230, 113, 113);
+}
+
+.wave3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 184px;
+}
+
+.wave3 .shape-fill {
+    fill: rgb(26, 37, 37);
+}
+
+.wrapper {
+  width: 500px;  
+}
+
+.fontsize {
+  font-size: 50px;
+}
+
+.hover-box {
+  perspective: 1000px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.hover-box:hover .box {
+  transform: rotateX(20deg) rotateY(30deg) translateZ(50px);
+}
+
+/*
+// pure css example of wave (not used in final)
+    .curve {
+      position: absolute;
+      height: 225px;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .curve::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        transform: translate(85%, 60.5%);
+        background-color: rgb(26, 37, 37);
+      }
+
+      .curve::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: rgb(111, 111, 204);
+        transform: translate(-3.7%, 40%);
+        z-index: -1;
+      }
+*/
+
+nav {
+    background-color: rgba(51,51,51,0.5); 
+    border-top: 2px solid rgb(111, 111, 204); 
+    border-bottom: 2px solid rgb(111, 111, 204);
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 28px 32px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
